@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Alamofire
 
-class ViewController: UIViewController {
+class SignUpLoginViewController: UIViewController {
     
     private var emailbox: UIView!
     private var emailTextField: UITextField!
@@ -55,6 +54,21 @@ class ViewController: UIViewController {
     //CURRENT VIEW
     
     private var current: UIView!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+    }
+    
+    override init() {
+        super.init(nibName:"SignUpLoginViewController", bundle: nil)
+    }
+    
+    required init(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
